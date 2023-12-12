@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register - Online Laptop Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Register an Account</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="laptop1.html">Laptop 1</a></li>
+                <li><a href="laptop2.html">Laptop 2</a></li>
+                <li><a href="laptop3.html">Laptop 3</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="current"><a href="login.html">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <form action="registration_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Online Laptop Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
