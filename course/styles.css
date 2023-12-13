@@ -1,0 +1,150 @@
+/* styles.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+header {
+    border: 2px solid white;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn{
+
+    max-width: 300px;
+    max-height: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all ease 0.3s;
+    float: right;
+    
+}
+.btn:hover{
+    background-color: aqua;
+    transform: scale(1.1);
+}
+
+#headImg img
+{
+    max-width: 150px;
+    border-radius: 50%;
+    float: left;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+
+nav {
+    border: 2px solid rgb(8, 8, 8);
+    background-color: #5192cffa;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(229, 48, 48);
+   
+}
+
+/* Styling for sections */
+section {
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 800px;
+    
+}
+
+p {
+    text-align: justify;
+}
+#list{
+    text-align: justify;
+}
+
+#enroll{
+    text-align: center;
+}
+
+/* About and Outline sections layout */
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    transition: all ease 0.3s;
+    background-color: rgb(237, 236, 228);
+}
+
+.section-container:hover 
+{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.386);
+    transform: scale(1.03);
+}
+
+#instructors
+{
+    background-color: rgb(237, 236, 228);
+    transition: all ease 0.3s;
+}
+
+#instructors:hover{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.386);
+    transform: scale(1.03);
+}
+
+
+/* Instructor cards */
+.instructor-card {
+    padding: 20px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(210, 208, 194);
+    transition: all ease 0.2s;
+    
+}
+
+.instructor-card:hover 
+{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.386);
+    transform: scale(1.03);
+}
+
+
+.instructor-card img {
+    max-width: 15%; /* Ensure the image doesn't overflow the container */
+    border-radius: 50% 50%; /* Make the image round */
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#navdata{
+    text-align: center;
+}
