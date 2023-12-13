@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        section {
+            max-width: 500px;
+            margin: 20px auto;
+            margin-top: 120px;
+            padding: 20px;
+            background-color: #333; /* Updated background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover{
+            transform: scale(1.05);
+        }
+
+        form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: grid;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: white; /* Set label text color to white */
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #387eee; /* Set button background color to white */
+            color: #333; /* Set button text color to dark */
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd; /* Button color on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: white; /* Set h1 text color to white */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+    </header>
+
+    <section>
+        <form>
+           <h1>Login Here</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" onclick="loggedin()">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+
+        <script>
+            function loggedin() {
+                alert("You have successfully logged in!");
+                location.reload();
+            }
+        </script>
+
+
+</body>
+</html>
